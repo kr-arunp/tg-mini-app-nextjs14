@@ -186,16 +186,3 @@ Web Apps inside Telegram in the form of a bot.
 
 Mini Apps offer Telegram-specific UI elements like Main Button, Popups, Telegram Theme Params, and Viewport. They also provide features like Telegram Authentication, Cloud Storage, and more.
 
-### Can you tell what all things I need to do to convert my WebApp to a Mini App?
-
-Your normal website will also work fine in most cases if you do not have in-app links to other domains.
-
-## Support
-
-If you encounter any issues or have questions:
-
-- **Telegram:** [Rabble Mini App Group](https://t.me/+rFqLyk4_W-diZDZl)
-- **Twitter:** [@happys1ngh](https://twitter.com/happys1ngh)
-- **GitHub Issues:** [ETH Telegram Mini App Starter Kit Issues](https://github.com/HAPPYS1NGH/tg-mini-app-nextjs/issues)
-
-Happy coding! 🚀
