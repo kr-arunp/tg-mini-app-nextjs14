@@ -1,8 +1,8 @@
-# ETH Telegram Mini App Starter Kit
+# ETH Telegram Mini App 
 
 ## Getting Started
 
-This starter kit helps you create a mini application integrated with Ethereum and Telegram. Follow the steps below to set up and run the project.
+This repo helps you create a mini application integrated with Ethereum and Telegram. Follow the steps below to set up and run the project.
 
 ### Prerequisites
 
