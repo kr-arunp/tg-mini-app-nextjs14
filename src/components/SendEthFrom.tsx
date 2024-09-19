@@ -25,8 +25,10 @@ export const SentEthForm = () => {
         address,
         chainId,
         query: {
-            enabled: !!address
+            enabled: !!address,
+            refetchInterval: 5000,
         }
+
     });
     const [recipientAddress, setRecipientAddress] = useState<Address | string | null>(null);
     const { data: hash, isPending: isSendPending, sendTransactionAsync } = useSendTransaction();

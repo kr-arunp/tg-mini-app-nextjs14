@@ -14,7 +14,6 @@ export default function Home() {
   const utils = useUtils();
   const popUp = usePopup();
   const mainBtn = useMainButton();
-  const viewport = useViewport();
 
   const handlePopUp = async () => {
     const response = await popUp.open({
@@ -32,13 +31,14 @@ export default function Home() {
 
   const handleShare = async () => {
     utils.shareURL(
-      "https://t.me/krdemoBot",
+      "https://t.me/arunp201",
       "Join Tg mini app bot",
     );
   };
+
   const handleMainBtn = async () => {
     mainBtn.enable();
-    mainBtn.setText("New Text");
+    mainBtn.setText("Main Menu Button",);
     mainBtn.setBgColor("#08F7AF");
     if (mainBtn.isVisible) {
       mainBtn.hide();
@@ -49,7 +49,8 @@ export default function Home() {
 
   mainBtn.on("click", () => {
     mainBtn.showLoader();
-    mainBtn.setText("Action Performing");
+    mainBtn.setText("User Clicked");
+
     setTimeout(() => {
       console.log("Main Button Clicked");
       mainBtn.hideLoader();
@@ -57,12 +58,6 @@ export default function Home() {
       mainBtn.hide();
     }, 2000);
   });
-
-  const handleViewport = async () => {
-    if (!viewport?.isExpanded) {
-      viewport?.expand();
-    }
-  };
   return (
     <main className="">
       <h1 className="text-left text-2xl font-bold  font-sans mb-4 ">
@@ -93,14 +88,10 @@ export default function Home() {
           </div>
         </div>
         <div className="p-4  w-full bg-gray-100 rounded-lg">
-          <h2 className="text-lg font-bold">Test Buttons</h2>
-          <p className="text-sm">Click to see how buttons work</p>
+          <h2 className="text-lg font-bold">Testing Buttons</h2>
           <div className="flex gap-2 mt-2">
             <Button variant={"default"} size={"half"} onClick={handleMainBtn}>
               Toggle Main Button
-            </Button>
-            <Button variant={"outline"} size={"half"} onClick={handleViewport}>
-              Expand Webview
             </Button>
           </div>
         </div>
