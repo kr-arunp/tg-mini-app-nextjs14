@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex items-end">
         <Link  href="/" className="flex justify-center items-center gap-3">
           <Image src="/eth.svg" alt="Eth" width={52.8} height={21.6} />
-          <h1 className="text-2xl font-semibold italic">TG Mini App</h1>
+          <h1 className="md:text-xl text-base font-semibold italic">TG Mini App</h1>
         </Link>
         <div className="ml-auto flex items-center ">
           <ConnectButton accountStatus={"avatar"} chainStatus={"icon"} />
@@ -30,13 +30,13 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/contract"
-          className={`${pathname == "/contract"
+          href="/send"
+          className={`${pathname == "/send"
               ? "text-cyan-400"
               : "text-color hover:text-cyan-400/90"
             } `}
         >
-          Contract
+          Send
         </Link>
       </div>
     </nav>

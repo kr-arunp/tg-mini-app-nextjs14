@@ -37,7 +37,7 @@ import Image from "next/image";
 
 function RootInner({ children }: PropsWithChildren) {
   // Mock Telegram environment in development mode if needed.
-  if (process.env.NODE_ENV === "development") {
+  if (process.env.NEXT_PUBLIC_NODE_ENV === "development") {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useTelegramMock();
   }
@@ -69,7 +69,7 @@ export function TelegramProvider(props: PropsWithChildren) {
     </ErrorBoundary>
   ) : (
     <div className=" absolute top-0 left-0 flex flex-col items-center  gap-4 justify-center w-full h-full">
-      <Image src={"/butterfly.svg"} alt="Rabble" width={38} height={64} />
+      <Image src={"/eth.svg"} alt="eth" width={38} height={64} />
       <div className="flex gap-4">
         <p>{"App is loading..."}</p>
         <Loader 
